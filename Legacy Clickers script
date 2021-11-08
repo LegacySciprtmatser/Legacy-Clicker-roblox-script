@@ -201,7 +201,7 @@ end)
 
 --AUTO EGGS HATCHING --
 
-D:Label("Spawn World Eggs",{
+b:Label("Spawn World Eggs",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
@@ -232,7 +232,7 @@ b:Toggle("Auto Sand Egg",function(bool)
     end
 end)
 
-D:Label("Candy World Eggs",{
+b:Label("Candy World Eggs",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
