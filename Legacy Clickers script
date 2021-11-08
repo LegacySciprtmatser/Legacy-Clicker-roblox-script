@@ -201,19 +201,65 @@ end)
 
 --AUTO EGGS HATCHING --
 
-b:Toggle("Auto common egg",function(bool)
+D:Label("Spawn World Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Common Egg",function(bool)
     getgenv().buyEgg = bool
-    print("Auto common egg is: ", bool)
+    print("Auto Common Egg is: ", bool)
     if bool then
         buyEgg();
     end
 end)
 
-b:Toggle("Auto Rare egg",function(bool)
+b:Toggle("Auto Rare Egg",function(bool)
     getgenv().buyEgg = bool
-    print("Auto Rare egg is: ", bool)
+    print("Auto Rare Egg is: ", bool)
     if bool then
         buyEgg1();
+    end
+end)
+
+b:Toggle("Auto Sand Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Sand Egg is: ", bool)
+    if bool then
+        buyEgg2();
+    end
+end)
+
+D:Label("Candy World Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Gummy Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Gummy Egg is: ", bool)
+    if bool then
+        buyEgg3();
+    end
+end)
+
+b:Toggle("Auto Sundae Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Sundae Egg is: ", bool)
+    if bool then
+        buyEgg4();
+    end
+end)
+
+b:Toggle("Auto Cotton Candy Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Cotton Candy is: ", bool)
+    if bool then
+        buyEgg5();
     end
 end)
 --[[
@@ -303,7 +349,58 @@ game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg
     end)    
 end
 
+function buyEgg2()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Sand Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+--Candy world egg -- 
 
+function buyEgg3()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Gummy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg4()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Sundae Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg5()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Cotton Candy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
 --AUTO REBIRTH TO MAKE BUTTONS WORK --
 
     function autoRebirth1()
