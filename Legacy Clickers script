@@ -205,29 +205,15 @@ b:Toggle("Auto common egg",function(bool)
     getgenv().buyEgg = bool
     print("Auto common egg is: ", bool)
     if bool then
-        buyEgg1();
+        buyEgg();
     end
 end)
 
 b:Toggle("Auto Rare egg",function(bool)
     getgenv().buyEgg = bool
-    print("Auto Rare Egg is: ", bool)
+    print("Auto Rare egg is: ", bool)
     if bool then
-        buyEgg2();
-    end
-end)
-
--- Limited EGG --
-b:Label("Limited Eggs",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-
-b:Toggle("Auto Limited Egg",function(bool)
-    getgenv().buyEgg = bool
-    print("Auto Limited Egg is: ", bool)
-    if bool then
-        buyEggLim();
+        buyEgg1();
     end
 end)
 --[[
@@ -291,7 +277,7 @@ function doTap()
      end)
 end
 
-function buyEgg1()
+function buyEgg()
     spawn(function()
         while getgenv().buyEgg == true do
 local args = {
@@ -304,7 +290,7 @@ game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg
     end)    
 end
 
-function buyEgg2()
+function buyEgg1()
     spawn(function()
         while getgenv().buyEgg == true do
 local args = {
@@ -317,18 +303,6 @@ game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg
     end)    
 end
 
-function buyEggLim()
-    spawn(function()
-        while getgenv().buyEgg == true do
-local args = {
-    [1] = "Single", -- change this if you own Triple -- 
-    [2] = "Fall Egg"
-}
-game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
-            wait()
-        end
-    end)    
-end
 
 --AUTO REBIRTH TO MAKE BUTTONS WORK --
 
