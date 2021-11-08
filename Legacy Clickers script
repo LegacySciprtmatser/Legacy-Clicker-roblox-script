@@ -531,6 +531,23 @@ game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg
         end
     end)    
 end
+--[[
+function getCurrentplayerPDS()
+    local plyr = game .Players.LocalPlayers;
+    if plyr.Character then
+        return plyr.Character.HumanoidRootPart.Position
+    end
+    return false;
+end
+
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayers;
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+    end
+end
+]]
+
 --AUTO REBIRTH TO MAKE BUTTONS WORK --
 
     function autoRebirth1()
