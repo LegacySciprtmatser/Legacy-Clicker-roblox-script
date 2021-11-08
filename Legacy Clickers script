@@ -232,7 +232,7 @@ b:Toggle("Auto Sand Egg",function(bool)
     end
 end)
 
-b:Label("Candy World Eggs",{
+b:Label("Candy Land Eggs",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
@@ -260,6 +260,67 @@ b:Toggle("Auto Cotton Candy Egg",function(bool)
     print("Auto Cotton Candy is: ", bool)
     if bool then
         buyEgg5();
+    end
+end)
+
+b:Label("Oceanic Kingdom Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Oceanic Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Oceanic is: ", bool)
+    if bool then
+        buyEgg6();
+    end
+end)
+
+b:Toggle("Auto Deep Sea Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Deep Sea is: ", bool)
+    if bool then
+        buyEgg7();
+    end
+end)
+
+b:Label("UnderWorld Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Fiery Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Fiery is: ", bool)
+    if bool then
+        buyEgg8();
+    end
+end)
+
+b:Toggle("Auto Hellfire Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Hellfire is: ", bool)
+    if bool then
+        buyEgg9();
+    end
+end)
+
+b:Label("Limited Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Fall Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Fall is: ", bool)
+    if bool then
+        buyEgg10();
     end
 end)
 --[[
@@ -395,6 +456,75 @@ function buyEgg5()
 local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Cotton Candy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+-- Oceanic kingdom -- 
+
+function buyEgg6()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Oceanic Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg7()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Deep Sea Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+-- Underworld--
+function buyEgg8()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Fiery Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg9()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Hellfire Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+--limited EGG -- 
+function buyEgg10()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Fall Egg"
 }
 game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
