@@ -375,7 +375,7 @@ yourvariable:Refresh("Hello") It will only change the text ofc
 
 local remotePate = game:GetService("ReplicatedStorage").Shared.Knit.Services.remoteService.RE
 
-local hatch = game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+
 
 function doTap()
     spawn(function()
@@ -393,7 +393,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Common Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -406,7 +406,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Rare Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -419,7 +419,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Sand Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -433,7 +433,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Gummy Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -446,7 +446,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Sundae Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -459,7 +459,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Cotton Candy Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -474,7 +474,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Oceanic Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -487,7 +487,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Deep Sea Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -501,7 +501,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Fiery Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -514,7 +514,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Hellfire Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
@@ -528,7 +528,7 @@ local args = {
     [1] = "Single", -- change this if you own Triple -- 
     [2] = "Fall Egg"
 }
-hatch
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
             wait()
         end
     end)    
