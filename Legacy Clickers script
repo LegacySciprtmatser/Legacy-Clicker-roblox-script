@@ -2,7 +2,8 @@ getgenv().autoTap = false;
 getgenv().autoRebirth = false;
 getgenv().buyEgg = false;
 
-local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+local library = loadstring(game:HttpGet(('https://raw.githubusercon
+tent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Clicking Simulator Script") -- Creates the window
 
